@@ -1,0 +1,22 @@
+{
+  "name": "elysia",
+  "version": "1.0.50",
+  "scripts": {
+    "seed": "bunx prisma db seed",
+    "generate": "bunx prisma generate"
+  },
+  "dependencies": {
+    "@elysiajs/swagger": "^0.7.3",
+    "@prisma/client": "^5.3.1",
+    "bson": "^6.1.0",
+    "elysia": "latest",
+    "prisma": "^5.3.1"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "module": "src/index.ts",
+  "prisma": {
+    "seed": "bun utils/seed.ts"
+  }
+}
